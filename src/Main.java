@@ -1,12 +1,29 @@
 import inheritance.Animal;
-import inheritance.Dog;
-import encapsulation.Person;
-import abstraction.Vehicle;
-import abstraction.Car;
+
+import interfaces.Vehicle;
+import interfaces.Car;
+import interfaces.Bicycle;
+
+
+import interfaces.*;
 
 public class Main {
     public static void main(String[] args) {
-        Animal genericAnimal = new Animal();
+        interfaces.Vehicle car = new Car();
+        interfaces.Vehicle bicycle = new Bicycle();
+
+        car.start();
+        bicycle.start();
+
+
+
+
+
+
+
+
+
+        /*Animal genericAnimal = new Animal();
         Dog dog = new Dog();
         Animal polyDog = new Dog();
 
@@ -25,6 +42,6 @@ public class Main {
         // Abstraction örneği
         Vehicle car = new Car();
         car.start(); //Soyut sınıftaki hazır metod.
-        car.move(); //Alt sınıftaki override edilen metod.
+        car.move(); //Alt sınıftaki override edilen metod.*/
     }
 }
